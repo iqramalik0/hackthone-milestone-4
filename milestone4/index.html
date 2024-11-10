@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+    <form id="submission-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+             <br>
+             <br>
+             <label for="father-name">Father Name:</label>
+             <input type="text" id="father-name" placeholder="Enter your father name" required>
+             <br>
+             <br>
+             <label for="cnic">CNIC:</label>
+             <input type="text" id="cnic" placeholder="Enter your cnic number" required>
+             <br>
+             <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+             <br>
+             <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your number" required>
+            <br>
+            <br> 
+        </fieldset>
+<br>
+<br>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Please fill out your education here" rows="4" required></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Please fill out your work experience here" rows="4" required></textarea>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Please fill out your skills here" rows="4" required></textarea>
+        </fieldset>
+        <br>
+        <button type="submit"><b>Generate Submission-form here!</b></button>
+    </form>
+    <br>
+    <br>
+    <!--Dynamic & Editable Submission Form-->
+    <div id="submission-form-display" contenteditable="true">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
